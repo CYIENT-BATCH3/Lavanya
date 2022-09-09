@@ -1,0 +1,12 @@
+//store value using  pragma
+#include <stdio.h>
+#pragma pack(1)
+struct student 
+{
+char ch;
+int a;
+}s1;
+int main()
+{
+printf("sizeof(s1)=%d\n",sizeof(s1));
+}

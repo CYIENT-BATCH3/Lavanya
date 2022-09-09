@@ -1,0 +1,36 @@
+
+struct library details:
+----------------------
+
+
+#include <stdio.h>
+struct librery_books{
+    int book_id;
+    char book_name[20];
+    char book_author[30];
+    char subject_name[26];
+};
+int main(){
+    struct librery_books details,*ptr;
+    ptr=&details;
+    
+    printf("Enter the librery books details:");
+    
+    printf("Enter the book id:\n ");
+    scanf("%d",&ptr->book_id);
+    
+    printf("Enter the book name:\n");
+    scanf("%s",ptr->book_name);
+    
+    printf("Enter the book author:\n");
+    scanf("%s",&ptr->book_author);
+    
+    printf("Enter the subject name:\n");
+    scanf("%s",ptr->subject_name);
+     
+    printf("\nEnter the book id:%d",ptr->book_id);
+    printf("\nEnter the book name:%s",ptr->book_name);
+   printf("\nEnter the book aurther:%s",ptr->book_author);
+    printf("\nEnter the subject name:%s",ptr->subject_name);
+    
+}
